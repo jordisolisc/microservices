@@ -29,7 +29,7 @@ public class UserService {
         ResponseTemplateVO vo = new ResponseTemplateVO();
         User user = userRepository.findByUserId(userId);
 
-        Department department = restTemplate.getForObject("http://localhost:9001/departaments/" + user.getDepartamentId(), Department.class);
+        Department department = restTemplate.getForObject("http://DEPARTMENT-SERVICE/departaments/" + user.getDepartamentId(), Department.class);
         vo.setUser(user);
         vo.setDepartment(department);
         return vo;
