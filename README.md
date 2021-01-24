@@ -4,4 +4,4 @@
 + Service Registry
     http://localhost:8761
 + Cloud Gateway
-
++ Config Server over GIT
